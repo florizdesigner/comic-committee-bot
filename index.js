@@ -6,6 +6,6 @@ require('dotenv').config()
 const bot = new TelegramBot(process.env.TELEGRAM_BOT_TOKEN, {polling: true})
 
 bot.onText(/\/pay/, (msg, match) => {
-    console.log('msg')
-    console.log('match')
+    console.log(msg)
+    console.log(match)
 })
